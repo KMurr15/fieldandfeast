@@ -69,6 +69,50 @@ table {
 }
 
 /* GLOBAL STYLES (mobile first/small) */
+/* --- Overall style --- */
+body{
+    font-family: var(--font); 
+    font-size: 1em;
+    color: var(--dark-charcoal);
+    background-color: var(--soft-white);
+}
+
+header, footer{
+    background-color: var(--midnight-blue);
+    text-align: center;
+    color: var(--soft-white)
+}
+
+/* --- Header --- */
+h1{
+    font-size: 8em;
+    font-weight: bold;
+}
+
+header p{
+    font-style: italic;
+}
+
+nav{
+    background-color: var(--champagne-gold);
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 2.5em;
+    color: var(--midnight-blue);
+    font-weight: bold;
+}
+
+/* --- Main --- */
+/* --- Footer --- */
 
 /* MEDIA QUERY (medium) */
 
