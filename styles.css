@@ -75,7 +75,7 @@ body{
     font-family: var(--font); 
     font-size: 1em;
     color: var(--dark-charcoal);
-    background-color: var(--soft-white);
+    background-color: var(--linen);
     padding: 0;
     margin: 0;
 }
@@ -142,6 +142,8 @@ h3{
 
 main{
     padding: 2rem 1.5rem;
+    max-width: 850px;
+    margin: 0 auto;
 }
 
 main > section{
@@ -176,7 +178,7 @@ div{
 div p{
     text-align: center;
     font-style: italic;
-    padding: 0.5rem 0 0.6rem;
+    padding: 0.5rem 0.2rem 0.6rem;
 }
 
 #gallery img{
@@ -196,7 +198,7 @@ div p{
 
 /* --- Footer --- */
 footer{
-    padding: 4rem 0 1rem;
+    padding: 4rem 0 1.5rem;
 }
 
 footer a{
@@ -205,7 +207,7 @@ footer a{
 }
 
 address{
-    padding-bottom: 3.5rem;
+    padding-bottom: 3rem;
 }
 
 /* MEDIA QUERY (medium) */
@@ -226,5 +228,27 @@ address{
 }
 
 /* MEDIA QUERY (large) */
+@media screen and (min-width: 900px){
+    #gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    #gallery{
+        column-gap: 1.5rem;
+    }
+
+    #gallery h2, #gallery > p{
+        grid-column: 1/4;
+    }
+}
 
 /* MEDIA QUERY (xl) */
+@media screen and (min-width: 1200px){
+    #gallery{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    #gallery h2, #gallery > p{
+        grid-column: 1/6;
+    }
+}
