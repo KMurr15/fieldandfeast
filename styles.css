@@ -195,6 +195,18 @@ div p{
 }
 
 /* --- Footer --- */
+footer{
+    padding: 4rem 0 1rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--champagne-gold)
+}
+
+address{
+    padding-bottom: 3.5rem;
+}
 
 /* MEDIA QUERY (medium) */
 
